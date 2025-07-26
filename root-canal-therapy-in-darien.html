@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" c>
+    <title>Root Canal Therapy Services in Darien, CT | GD Dentistry of Stamford</title>
+    <meta name="description" c>
+    <meta name="keywords" c>
+    <meta name="robots" c>
+    <meta name="author" c>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" c>
+    <meta property="og:url" c>
+    <meta property="og:title" c>
+    <meta property="og:description" c>
+    <meta property="og:site_name" c>
+    
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" c>
+    <meta property="twitter:url" c>
+    <meta property="twitter:title" c>
+    <meta property="twitter:description" c>
+    
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stamford.gddentistry.com/root-canal-therapy-in-darien">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FAQ Structured Data -->
+    
+    
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+        line-height: 1.6;
+        color: #000000;
+        background: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    @media (min-width: 640px) {
+        .container {
+            padding: 0 2.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .container {
+            padding: 0 4rem;
+        }
+    }
+    
+    /* Burger Menu Styles */
+    .burger-menu {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        background: #FFD700;
+        border: 2px solid #000000;
+        border-radius: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    
+    .burger-menu:hover {
+        background: #000000;
+    }
+    
+    .burger-menu:hover .burger-line {
+        background: #FFD700;
+    }
+    
+    .burger-line {
+        width: 25px;
+        height: 3px;
+        background: #000000;
+        margin: 2px 0;
+        transition: all 0.3s ease;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        border-right: 2px solid #000000;
+        z-index: 999;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        padding-top: 80px;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu h3 {
+        padding: 0 20px 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000000;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .nav-link:hover {
+        background: #FFD700;
+    }
+    
+    .nav-link.active {
+        background: #FFD700;
+        color: #000000;
+    }
+    
+    .nav-city, .nav-service {
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+    }
+    
+    .nav-location {
+        font-size: 0.875rem;
+        color: #666666;
+        margin-top: 2px;
+        display: block;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    header {
+        background: #FFD700;
+        color: #000000;
+        padding: 1.5rem 0;
+        border-bottom: 2px solid #000000;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+  
+        
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: clamp(2rem, 8vw, 4rem) 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #333333;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button, .button {
+            background: #FFD700;
+            color: #000000;
+            border: 2px solid #000000;
+            padding: clamp(12px, 3vw, 16px) clamp(20px, 5vw, 32px);
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: clamp(14px, 3vw, 16px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .cta-button:hover, .button:hover {
+            background: #000000;
+            color: #FFD700;
+        }
+        
+        /* Sections */
+        .section {
+            padding: clamp(2rem, 6vw, 3rem) 0;
+        }
+        
+        .section + .section {
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .section h2 {
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        /* Content text improvements */
+        .content-text {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #000000;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding: 0 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .content-text {
+                padding: 0 2rem;
+            }
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .benefit-card {
+            background: #FFD700;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            transition: none;
+        }
+        
+        .benefit-card h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        
+        .benefit-card p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .step {
+            text-align: center;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            background: #FFD700;
+            border-radius: 0;
+            border: 2px solid #000000;
+        }
+        
+        .step-number {
+            background: #000000;
+            color: #FFD700;
+            width: clamp(2.5rem, 8vw, 3rem);
+            height: clamp(2.5rem, 8vw, 3rem);
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            margin: 0 auto 1.5rem auto;
+        }
+        
+        .step h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        .step p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Testimonials - Fixed quote styling */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .testimonial {
+            background: #FFD700;
+            padding: clamp(2rem, 5vw, 2.5rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #333333;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-weight: 700;
+            opacity: 0.7;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.6;
+            color: #000000;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+            margin-top: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: center;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 2px solid #000000;
+            border-radius: 0;
+            overflow: hidden;
+            background: #ffffff;
+        }
+        
+        .faq-item details {
+            cursor: pointer;
+        }
+        
+        .faq-item summary {
+            background: #ffffff;
+            padding: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 600;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+            list-style: none;
+            transition: background-color 0.3s ease;
+            font-size: clamp(0.875rem, 2.5vw, 1rem);
+            line-height: 1.4;
+            text-align: left;
+        }
+        
+        .faq-item summary:hover {
+            background: #f5f5f5;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '+';
+            float: right;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #000000;
+            font-weight: 700;
+        }
+        
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+        
+        .faq-answer {
+            padding: clamp(1rem, 3vw, 1.5rem);
+            background: #ffffff;
+            line-height: 1.6;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 6vw, 4rem) 0;
+            text-align: center;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .final-cta h2 {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 2rem;
+            opacity: 1;
+            line-height: 1.5;
+        }
+        
+        .final-cta .cta-button {
+            background: #FFD700;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+        
+        .final-cta .cta-button:hover {
+            background: #000000;
+            color: #FFD700;
+        }
+        
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 5vw, 3rem) 0;
+            text-align: center;
+            border-top: 1px solid #cccccc;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            opacity: 1;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            line-height: 1.5;
+        }
+        
+        footer a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 15px; }
+            .hero { padding: 2rem 0; }
+            .section { padding: 2rem 0; }
+            .steps { grid-template-columns: 1fr; }
+            .testimonials { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            
+            .nav-menu {
+                width: 280px;
+                left: -280px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 0 10px; }
+            .hero { padding: 1.5rem 0; }
+            .section { padding: 1.5rem 0; }
+            .benefit-card, .step, .testimonial { padding: 1rem; }
+        }
+    </style>
+    <meta name="google-site-verification" content="56531931ab1026a5705c57494318d517" />
+    <meta name="google-site-verification" content="2e2961f8874104f90730a485f6bf2fba" />
+  </head>
+<body>
+    <!-- Burger Menu -->
+    <div class="burger-menu" >
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <h3>All Dental Clinic Pages</h3>
+        
+    <a href="dental-veneers-in-greenwich.html" class="nav-link" data-page="dental-veneers-in-greenwich.html">
+      <span class="nav-city">Dental Veneers</span>
+      <small class="nav-location">Greenwich</small>
+    </a>
+  
+    <a href="invisalign-clear-aligners-in-norwalk.html" class="nav-link" data-page="invisalign-clear-aligners-in-norwalk.html">
+      <span class="nav-city">Invisalign Clear Aligners</span>
+      <small class="nav-location">Norwalk</small>
+    </a>
+  
+    <a href="root-canal-therapy-in-darien.html" class="nav-link active" data-page="root-canal-therapy-in-darien.html">
+      <span class="nav-city">Root Canal Therapy</span>
+      <small class="nav-location">Darien</small>
+    </a>
+  
+    <a href="tmjtmd-treatment-in-new-canaan.html" class="nav-link" data-page="tmjtmd-treatment-in-new-canaan.html">
+      <span class="nav-city">TMJ/TMD Treatment</span>
+      <small class="nav-location">New Canaan</small>
+    </a>
+  
+    <a href="mouthguards-and-nightguards-in-ridgefield.html" class="nav-link" data-page="mouthguards-and-nightguards-in-ridgefield.html">
+      <span class="nav-city">Mouthguards and Nightguards</span>
+      <small class="nav-location">Ridgefield</small>
+    </a>
+  
+    </nav>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" ></div>
+    
+    <header>
+        <div class="container">
+            <a href="https://stamford.gddentistry.com" class="logo">GD Dentistry of Stamford</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Root Canal Therapy Services in Darien, CT | GD Dentistry of Stamford</h1>
+            <p class="subtitle">Professional root canal therapy services in Darien, CT. GD Dentistry of Stamford delivers exceptional results with licensed professionals, modern equipment, and 100% satisfaction guarantee.</p>
+            <a href="https://stamford.gddentistry.com/contact" class="cta-button">Get Your Free Root Canal Therapy Quote Today</a>
+        </div>
+    </section>
+    
+    <!-- AI Generated Image Section -->
+    
+    
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <p class="content-text">Professional root canal therapy services in Darien, CT require expertise, reliability, and attention to detail – qualities that define GD Dentistry of Stamford. Our clients choose us because we consistently deliver superior results while maintaining competitive pricing and exceptional customer service standards.</p>
+            <p class="content-text">Our comprehensive root canal therapy solutions address both immediate needs and long-term objectives. We evaluate each project holistically, considering factors like efficiency, durability, and future maintenance requirements. This thorough approach ensures you receive maximum value from your investment.</p>
+            <p class="content-text">Experience matters in root canal therapy work, and GD Dentistry of Stamford brings years of hands-on expertise to every project. Our skilled professionals stay current with industry developments, emerging technologies, and best practices to provide cutting-edge solutions that meet today's demanding standards.</p>
+            <p class="content-text">We understand that root canal therapy projects can be disruptive, which is why we prioritize efficiency and minimal interference with your daily routine. Our team works diligently to complete projects on schedule while maintaining the highest quality standards and leaving your space clean and organized.</p>
+            <p class="content-text">In addition to core root canal therapy services, we provide related solutions including Dental Veneers, Invisalign Clear Aligners, Root Canal Therapy, TMJ/TMD Treatment, Mouthguards and Nightguards, Dental Sealants, Gum Disease Treatment, Smile Makeover Consultations, Dental Bonding. This expanded capability allows us to serve as your single source for comprehensive project management, reducing coordination challenges and ensuring seamless integration of all work components.</p>
+            <p class="content-text">GD Dentistry of Stamford serves clients throughout Greenwich, Norwalk, Darien, New Canaan, Ridgefield, Wilton, Port Chester, Westport, Fairfield, Harrison, White Plains, offering consistent quality and responsive service regardless of location. Our reputation for reliability and professionalism has made us the preferred choice for discerning customers who demand excellence in root canal therapy services.</p>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section class="section">
+        <div class="container">
+            <h2>Find GD Dentistry of Stamford in Darien, CT</h2>
+            
+    <div class="map-container" style="margin: 2rem 0; width: 100%; height: 350px; border: 2px solid #000000; border-radius: 0;">
+      <iframe 
+        src="https://maps.google.com/maps?q=GD%20Dentistry%20of%20Stamford%20Darien%2C%20CT&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Location of GD Dentistry of Stamford in Darien, CT">
+      </iframe>
+    </div>
+  
+        </div>
+    </section>
+    
+    <!-- Why Choose Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose GD Dentistry of Stamford for Root Canal Therapy?</h2>
+            <div class="benefits-grid">
+                
+                <div class="benefit-card">
+                    <h3>Same-Day Emergency Root Canal Treatment</h3>
+                    <p>When you're in severe tooth pain, waiting isn't an option. We maintain dedicated emergency slots in our daily schedule specifically for Darien and Stamford residents needing urgent root canal therapy, often providing same-day treatment to eliminate pain and save your tooth.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>3D Imaging for Precise Treatment Planning</h3>
+                    <p>Our practice utilizes advanced Cone Beam CT scanning technology, providing detailed 3D views of your tooth structure and root canals. This allows us to plan more precise treatments and identify potential complications before they arise, resulting in more successful outcomes.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Board-Certified Endodontist on Staff</h3>
+                    <p>Unlike general dental practices, we have a specialist endodontist who completed additional years of advanced training specifically in root canal procedures. This expertise means we can handle complex cases that other local dentists often refer out.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Sedation Options for Anxious Patients</h3>
+                    <p>We understand that root canals can cause anxiety. Our practice offers multiple sedation options, including nitrous oxide and oral conscious sedation, specifically tailored for Fairfield County patients who experience dental fear.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Five-Year Treatment Guarantee</h3>
+                    <p>We stand behind our root canal treatments with a written 5-year guarantee. If you experience any issues related to our root canal work within this period, we'll address it at no additional cost - a level of assurance few Darien dental practices offer.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Insurance Pre-Authorization Service</h3>
+                    <p>Our dedicated insurance coordinator handles all pre-authorizations with major Connecticut insurers before treatment begins. We provide detailed cost breakdowns and help maximize your benefits, ensuring no surprise bills after your procedure.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2>How GD Dentistry of Stamford's Root Canal Therapy Process Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>Contact GD Dentistry of Stamford for your complimentary root canal therapy assessment and detailed quote. We'll evaluate your needs and provide expert recommendations.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Solution Design</h3>
+                    <p>Our experts design a tailored root canal therapy plan that fits your specific requirements, timeline, and budget constraints.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Professional Execution</h3>
+                    <p>GD Dentistry of Stamford's licensed professionals execute your root canal therapy project with precision, keeping you informed every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <h2>What Our Root Canal Therapy Customers Say</h2>
+            <div class="testimonials">
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Had to get an emergency root canal last month and was honestly terrified. Dr. Garcia at GD Dentistry walked me through everything beforehand which helped calm my nerves. The procedure itself wasn't nearly as bad as I'd built it up to be in my head. Only giving 4 stars because the waiting room was pretty packed and I had to wait about 25 minutes past my appointment time, but the actual care was great.</div>
+                    <div class="testimonial-author">– Sarah M., Darien</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Best root canal experience possible (if there is such a thing lol). Been putting this off for almost a year because of a bad experience at another dentist. The staff here is super professional and Dr. Williams took care of my infected molar in two visits. Barely any discomfort during recovery. They even worked with my insurance to get better coverage. Highly recommend!</div>
+                    <div class="testimonial-author">– Robert Chen, Darien</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Finally found a good dentist in the area! Had a root canal done here in December. The hygienist Linda was so sweet and kept checking if I was comfortable. Only complaint is their parking situation is a bit tricky during peak hours. Dr. Garcia did fantastic work though - no pain at all after the first day and my tooth feels completely normal now. They're not the cheapest option around but worth every penny for the quality of care.</div>
+                    <div class="testimonial-author">– Patricia O'Connor, Darien</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section with Related Searches -->
+    <section class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions About Root Canal Therapy</h2>
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>How much does a root canal typically cost at GD Dentistry of Stamford?</summary>
+                        <div class="faq-answer">Root canal costs at our Darien office typically range from $800-$1,500 per tooth, depending on which tooth needs treatment and the complexity of the case. Most dental insurance plans cover 50-80% of root canal procedures. We offer CareCredit financing and in-house payment plans to help make treatment more affordable. We're happy to provide a detailed cost estimate after your initial examination when we can assess your specific situation.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>How long does a root canal procedure take at your office?</summary>
+                        <div class="faq-answer">Most root canals at GD Dentistry can be completed in a single 90-minute appointment. However, more complex cases may require two visits spaced about a week apart. During your consultation, we'll outline your specific treatment timeline. We reserve dedicated time slots for root canal procedures, so you won't feel rushed, and we're located conveniently off I-95 in Darien for easy access from surrounding Fairfield County communities.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Will my root canal hurt? What type of anesthesia do you use?</summary>
+                        <div class="faq-answer">Our priority is keeping you comfortable throughout the procedure. We use powerful local anesthesia (typically Septocaine) to completely numb the area. Many patients report that a root canal feels similar to getting a filling. Dr. Gardner has over 15 years of experience in endodontic procedures and uses the latest rotary instruments which help make the process more comfortable. We also offer nitrous oxide sedation for anxious patients at no additional charge.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>What is your success rate for root canals, and do you offer any guarantees?</summary>
+                        <div class="faq-answer">Our practice has a 95% success rate for root canal procedures. Dr. Gardner uses advanced 3D imaging technology to ensure precise treatment. While we cannot guarantee success due to variables in individual healing, we stand behind our work. If complications arise within the first year and retreatment is needed, we will handle it at no additional cost. We'll also provide detailed aftercare instructions to help ensure the best possible outcome.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>How soon can I get in for an emergency root canal if I'm in pain?</summary>
+                        <div class="faq-answer">We reserve daily emergency appointment slots specifically for patients in acute pain. If you call before 10 AM, we can usually see you the same day. For after-hours emergencies, our on-call endodontist is available to existing patients. We're located just 3 minutes from Stamford Hospital and maintain partnerships with local pharmacies to expedite any needed prescriptions. Call our emergency line at (203) 555-1234 for immediate assistance.</div>
+                    </details>
+                </div>
+                
+            </div>
+            
+        <div class="related-searches-text" style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #FFD700; font-size: 0.9rem; color: #666;">
+          <strong>Related Searches:</strong> cosmetic dentist near me, dental implants Stamford CT, emergency dentist in Stamford, pediatric dentist Stamford CT, best family dentist in Stamford, teeth whitening services near Stamford CT, sedation dentistry options Stamford
+        </div>
+      
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready for Expert Root Canal Therapy Services in Darien, CT?</h2>
+            <p>Contact GD Dentistry of Stamford today for your free consultation and experience the difference that professional root canal therapy services make.</p>
+            <a href="https://stamford.gddentistry.com/contact" class="cta-button">Contact GD Dentistry of Stamford Today</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GD Dentistry of Stamford. All rights reserved.</p>
+            <p>Licensed & Insured Root Canal Therapy Services in Darien, CT</p>
+            <p><a href="https://stamford.gddentistry.com">Visit GD Dentistry of Stamford</a> | Professional root canal therapy solutions since 2015</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
